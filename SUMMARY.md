@@ -9,6 +9,7 @@
 * [Downloading the Contract SDK](getting-started/downloading-the-contract-sdk.md)
 * [Installing Gamma - local blockchain](getting-started/installing-gamma.md)
 * [Deploying your first contract](getting-started/deploying-your-first-contract.md)
+* [Next steps](getting-started/next-steps.md)
 
 ## Gamma in Depth
 
