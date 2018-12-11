@@ -1,4 +1,4 @@
-# Getting Started
+# Orbs Contract SDK
 
 Test
 
