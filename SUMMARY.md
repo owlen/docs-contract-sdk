@@ -18,4 +18,5 @@
 * [Sending transactions and queries](gamma-in-depth/sending-transactions-and-queries.md)
 * [Working with multiple environments](gamma-in-depth/working-with-multiple-environments.md)
 * [Upgrading to latest versions](gamma-in-depth/upgrading-to-latest-versions.md)
+* [Gamma server under the hood](gamma-in-depth/gamma-server-under-the-hood.md)
 
