@@ -9,21 +9,29 @@ Send transactions to contracts by running `gamma-cli send-tx` and giving a JSON 
 For example, to send the transaction with arguments in **transfer.json**
 
 ```text
-gamma-cli send-tx -i transfer.json -signer user1
+gamma-cli send-tx transfer.json -signer user1
 ```
 
-Perform queries and call read-only contract methods by running `gamma-cli read` and giving a similar JSON file.
+Perform queries and call read-only contract methods by running `gamma-cli run-query` and giving a similar JSON file.
 
 For example, to make the read call with arguments in **get-balance.json**
 
 ```text
-gamma-cli read -i get-balance.json -signer user1
+gamma-cli run-query get-balance.json -signer user1
 ```
 
-### Command parameters
+## Command parameters
 
-* `-i` Path of the JSON file containing the call arguments
+```text
+gamma-cli send-tx <INPUT_FILE> -arg# [OVERRIDE_ARG_#] -signer [ID_FROM_KEYS_JSON]
+```
+
+```text
+gamma-cli run-query <INPUT_FILE> -arg# [OVERRIDE_ARG_#] -signer [ID_FROM_KEYS_JSON]
+```
+
 * `-signer` Account ID of the signer of the call \(from `orbs-test-keys.json`\)
+* `-arg#` Override the value of argument number \# from the input call argument JSON
 
 ## Call argument JSON
 
@@ -82,7 +90,7 @@ The array of arguments should be given according to the declaration of the metho
 ```javascript
   {
     "Type": "bytes",
-    "Value": "00ff018e00ab"
+    "Value": "00ff018e00ab2fe901"
   }
 ```
 
@@ -96,4 +104,54 @@ In addition to these primitives, Gamma CLI supports several aliases for convenie
     "Value": "user3"
   }
 ```
+
+## Overriding arguments from command line
+
+Consider a JSON for a typical **transfer** method
+
+{% code-tabs %}
+{% code-tabs-item title="transfer-15.json" %}
+```javascript
+{
+  "ContractName": "MyToken",
+  "MethodName": "transfer",
+
+  "Arguments": [
+    {
+      "Type": "uint64",
+      "Value": "15"
+    },
+    {
+      "Type": "bytes",
+      "Value": "b3d1caa2b3680e2c8feffa269c207c553fbbc828"
+    }
+  ]
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+The first argument is the **amount** and the second argument is the **recipient address**.
+
+If you want to send multiple transactions with different amounts or different addresses, creating multiple JSON files containing the different values can be a hassle.
+
+Instead, use the optional `-arg1` and `-arg2` command line arguments to override values
+
+```text
+gamma-cli send-tx transfer-15.json
+```
+
+           will send **15** tokens to recipient **b3d1caa2b3680e2c8feffa269c207c553fbbc828**
+
+```text
+gamma-cli send-tx transfer-15.json -arg1 22
+```
+
+           will send **22** tokens to recipient **b3d1caa2b3680e2c8feffa269c207c553fbbc828**
+
+```text
+gamma-cli send-tx transfer-15.json -arg2 7ccd7f7c18c0cb749dd8b8949f4b4e31f7188394
+```
+
+           will send **15** tokens to recipient **7ccd7f7c18c0cb749dd8b8949f4b4e31f7188394**
 

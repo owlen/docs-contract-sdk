@@ -7,14 +7,21 @@ To deploy a smart contract run the command `gamma-cli deploy` and provide the co
 For example, to deploy a contract named **MyToken**
 
 ```text
-gamma-cli deploy -name MyToken -code contract.go -signer user1
+gamma-cli deploy contract.go -name MyToken -signer user1
 ```
 
-### Command parameters
+## Command parameters
+
+```text
+gamma-cli deploy <CODE_FILE> -name [CONTRACT_NAME] -signer [ID_FROM_KEYS_JSON]
+```
 
 * `-name` Name of the contract on the blockchain \(used by future transaction senders\)
-* `-code` Path of the file containing the source code implementation of the contract
 * `-signer` Account ID of the signer of the deploy transaction \(from `orbs-test-keys.json`\)
+
+{% hint style="info" %}
+If you don't provide an explicit contract name with `-name`, your code file name will be used.
+{% endhint %}
 
 ## Caveats
 
