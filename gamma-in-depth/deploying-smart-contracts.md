@@ -16,6 +16,7 @@ gamma-cli deploy contract.go -name MyToken -signer user1
 gamma-cli deploy <CODE_FILE> -name [CONTRACT_NAME] -signer [ID_FROM_KEYS_JSON]
 ```
 
+* `<CODE_FILE>` Source file for the smart contract being deployed, normally .go or .js file
 * `-name` Name of the contract on the blockchain \(used by future transaction senders\)
 * `-signer` Account ID of the signer of the deploy transaction \(from `orbs-test-keys.json`\)
 

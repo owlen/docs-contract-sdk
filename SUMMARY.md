@@ -16,6 +16,7 @@
 * [Test keys and accounts](gamma-in-depth/test-keys-and-accounts.md)
 * [Deploying smart contracts](gamma-in-depth/deploying-smart-contracts.md)
 * [Sending transactions and queries](gamma-in-depth/sending-transactions-and-queries.md)
+* [Checking sent transaction status](gamma-in-depth/checking-sent-transaction-status.md)
 * [Working with multiple environments](gamma-in-depth/working-with-multiple-environments.md)
 * [Upgrading to latest versions](gamma-in-depth/upgrading-to-latest-versions.md)
 * [Gamma server under the hood](gamma-in-depth/gamma-server-under-the-hood.md)

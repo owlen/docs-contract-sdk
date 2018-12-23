@@ -30,6 +30,7 @@ gamma-cli send-tx <INPUT_FILE> -arg# [OVERRIDE_ARG_#] -signer [ID_FROM_KEYS_JSON
 gamma-cli run-query <INPUT_FILE> -arg# [OVERRIDE_ARG_#] -signer [ID_FROM_KEYS_JSON]
 ```
 
+* `<INPUT_FILE>` Path of the JSON file containing the call arguments
 * `-signer` Account ID of the signer of the call \(from `orbs-test-keys.json`\)
 * `-arg#` Override the value of argument number \# from the input call argument JSON
 
