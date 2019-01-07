@@ -24,7 +24,7 @@ Verify Go is installed correctly by running in terminal
 go version
 ```
 
-Any version above 1.10 should suffice.
+Any version above 1.11 should suffice.
 
 ## The Go workspace
 
