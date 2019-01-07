@@ -35,12 +35,12 @@ Every example contains a README explaining the nature of the contract and how to
 The API of the SDK is found at
 
 ```text
-~/go/src/github.com/orbs-network/orbs-contract-sdk/go/sdk
+~/go/src/github.com/orbs-network/orbs-contract-sdk/go/sdk/v1
 ```
 
 ## Updating the SDK
 
 In order to update the SDK to the latest version, run the same command used to download it initially.
 
- Notice that the SDK folder in your workspace is actually a git repo. You can also update the SDK by running git pull manually.
+Notice that the SDK folder in your workspace is actually a git repo. You can also update the SDK by running git pull manually.
 
