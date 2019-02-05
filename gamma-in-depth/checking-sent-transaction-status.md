@@ -15,7 +15,7 @@ After sending a transaction with `gamma-cli send-tx`, the transaction ID should 
 Use the **TxId** to check the status of the transaction
 
 ```text
-gamma-cli get-status nXAmGL2peGvXkrDxC2cFaZwhykfMGFGj1DUJ9eDFRdSnNgCpQ69MQz
+gamma-cli get-status 0x189403BAA46F80150F1EA77fE9F47f40Fb1d8C52AF0b90D83DCB084385f1C6e5F7763D62D276bF86
 ```
 
 ## Command parameters
@@ -24,7 +24,7 @@ gamma-cli get-status nXAmGL2peGvXkrDxC2cFaZwhykfMGFGj1DUJ9eDFRdSnNgCpQ69MQz
 gamma-cli get-status <TX_ID>
 ```
 
-* `<TX_ID>` Transaction ID in [Base58](https://en.wikipedia.org/wiki/Base58) as returned from `gamma-cli send-tx`
+* `<TX_ID>` Transaction ID in [Base64](https://en.wikipedia.org/wiki/Base64) as returned from `gamma-cli send-tx`
 
 ## Cryptographic proof for a transaction
 
@@ -33,7 +33,7 @@ The Orbs blockchain is able to provide cryptographic proof for the execution of 
 Use the **TxId** to obtain the proof
 
 ```text
-gamma-cli tx-proof nXAmGL2peGvXkrDxC2cFaZwhykfMGFGj1DUJ9eDFRdSnNgCpQ69MQz
+gamma-cli tx-proof 0x189403BAA46F80150F1EA77fE9F47f40Fb1d8C52AF0b90D83DCB084385f1C6e5F7763D62D276bF86
 ```
 
 The command parameters are identical to `gamma-cli send-tx`

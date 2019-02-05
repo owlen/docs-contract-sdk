@@ -37,23 +37,21 @@ The JSON format of `orbs-test-keys.json` is straightforward
 {% code-tabs %}
 {% code-tabs-item title="orbs-test-keys.json" %}
 ```javascript
-{
   "user1": {
-    "PrivateKey": "CVbAcCK9AsEdx+cxlzQW0svCRneVptJyYQtCGpunzU3kBUBTShRXAo0Whtr6n4Nj4tVilwL6vrmUcSiW9A5pYw==",
-    "PublicKey": "5AVAU0oUVwKNFoba+p+DY+LVYpcC+r65lHEolvQOaWM=",
-    "Address": "pGdqwA6dnTyjMXE8LBnh2HvhaJg"
+    "PrivateKey": "0x8fc915f55aD5c6EFA5dC9a20F14a1Ec365afa23Ed1E5eB42a7512e2977C6693D77b5D6bFDbFb44A441330d1EDcD7d654240fb6B1b5FfeDAB94695fc70576eCE1",
+    "PublicKey": "0x77B5D6bFDbfb44A441330d1eDCD7d654240Fb6B1b5FfEDAb94695Fc70576eCE1",
+    "Address": "0xAECf291DA35F40D161B18eA01439CE3173D31AFf"
   },
   "user2": {
-    "PrivateKey": "mQUAnmIftxonjYBUlCks4EfPzRJqgO5uRtfy3wq/sIjKfzei69ZV1wRhm0VExY5in8exVsvi1I65VqSXXhG1Zg==",
-    "PublicKey": "yn83ouvWVdcEYZtFRMWOYp/HsVbL4tSOuVakl14RtWY=",
-    "Address": "4WhWtACPTeBLokzQsHWLrKXgD4j7"
+    "PrivateKey": "0x09f781c591826F7c2c59905e1Ad3c735DbA4C66611f952BF11eb00f982b1644e4Be27318345a3A3dbb38aC64A603dd573d886EB22B1634B580661fd164467670",
+    "PublicKey": "0x4be27318345a3A3dBb38ac64A603DD573d886eB22B1634b580661fd164467670",
+    "Address": "0xD66D89bB766745943c1c87062Ca0D3587e7D926B"
   },
   "user3": {
-    "PrivateKey": "AN68zZOvVWRhip2lMfiVOToRjHtIx89X8auZgAKJJYfE0S5lvC7g7mp/nAbK379/AieuSotXM90LJxph1RNyAA==",
-    "PublicKey": "xNEuZbwu4O5qf5wGyt+/fwInrkqLVzPdCycaYdUTcgA=",
-    "Address": "3qH4WAToY4SnzibNsBCqNSvuRSUD"
+    "PrivateKey": "0x31e9AF96EF98957B966078b3Ea7cB058bFa10282b6A20DF832d817e4302114aa150FBFb587be65E07765a075988fB49e3CeaAe034E5e731aa961fAfc1375142a",
+    "PublicKey": "0x150FbfB587BE65e07765a075988fb49e3cEAAe034E5e731aA961faFc1375142a",
+    "Address": "0x28E445b353BC8376FD13291583Ec55e3e6140Ec5"
   }
-}
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -63,6 +61,7 @@ Feel free to edit the file manually and add your own accounts. "Real-life" accou
 The fields are encoded as follows:
 
 * Textual IDs for every account \(eg. `user2`\) can be changed to any string you prefer
-* Key fields are encoded in [Base64](https://en.wikipedia.org/wiki/Base64)
-* Address fields are strings as returned from the client SDK \(encoded in [Base58](https://en.wikipedia.org/wiki/Base58)\)
+* Key and Address fields are encoded in [Base64](https://en.wikipedia.org/wiki/Base64)
+
+
 

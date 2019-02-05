@@ -46,6 +46,6 @@ You can choose the active environment by passing the `-env` command line argumen
 For example, to work with environment **testnet2**
 
 ```text
-gamma-cli send-tx -i transfer.json -signer user1 -env testnet2
+gamma-cli send-tx transfer.json -signer user1 -env testnet2
 ```
 

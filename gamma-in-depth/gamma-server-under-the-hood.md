@@ -20,7 +20,7 @@ If you've installed Gamma CLI successfully, you should see among the results som
 
 ```text
 REPOSITORY          TAG                      IMAGE ID            CREATED             SIZE
-orbsnetwork/gamma   v0.7.0                   b208261722bf        2 weeks ago         382MB
+orbsnetwork/gamma   v0.8.0                   61057f923f89        2 weeks ago         426MB
 ```
 
 Gamma CLI downloads this image automatically from [Docker Hub](https://hub.docker.com/) with `docker pull`
