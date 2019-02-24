@@ -81,7 +81,7 @@ If the validation fails, the execution will return an error, so there is no retu
 In any function, calling `GetSignerAddress` will return the `[]byte` representation of the signer address
 
 ```go
-GetCallerAddress() []byte
+GetSignerAddress() []byte
 ```
 
 #### GetCallerAddress
