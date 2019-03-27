@@ -6,11 +6,19 @@ The API for this is included in the ethereum library
 
 ```go
 import (
-	"github.com/orbs-network/orbs-contract-sdk/go/sdk/v1/service"
+	"github.com/orbs-network/orbs-contract-sdk/go/sdk/v1/ethereum"
 )
 ```
 
 The library exposes two different functions described below
+
+### GetBlockNumber
+
+This function is used to get the latest 'safe' block number in Ethereum. The 'safe' block means a block which is in the past, around 25 minutes, to avoid forks.
+
+```go
+GetBlockNumber()
+```
 
 ### CallMethod
 
@@ -18,7 +26,7 @@ This function is used to perform a method call on ethereum, the action performed
 
 ```go
 CallMethod(
-        contractAddress string, 
+        ethContractAddress string, 
         jsonAbi string, 
         methodName string, 
         out interface{}, 
@@ -106,28 +114,47 @@ func readString(address, abi string) string {
 }
 ```
 
+### CallMethodAtBlock
+
+This function is exactly the same as the CallMethod function, only it lets to define which block you want to use.
+
+```go
+CallMethodAtBlock(
+        ethBlockNumber uint64,
+        ethContractAddress string, 
+        jsonAbi string, 
+        methodName string, 
+        out interface{}, 
+        args ...interface{})
+```
+
 ### GetTransactionLog 
 
 This function can enable you to access the Transaction Receipt of a specific transaction on Ethereum to access and filter its logs according to a specific event name.
 
 ```go
 GetTransactionLog(
-                contractAddress string, 
+                ethContractAddress string, 
                 jsonAbi string, 
-                ethTransactionId string, 
+                ethTxHash string, 
                 eventName string, 
-                out interface{})
+                out interface{}) (ethBlockNumber uint64, ethTxIndex uint32)
 ```
 
 The arguments `GetTransactionLog` takes are:
 
-* `contractAddress` - The Ethereum contract address with a 0x prefix
-*  `jsonAbi` - The ABI of the contract with the event, as a json string
-* `ethTransactionId` - The Ethereum transaction address with a 0x prefix
+* `ethContractAddress` - The Ethereum contract address with a 0x prefix
+* `jsonAbi` - The ABI of the contract with the event, as a json string
+* `ethTxHash` - The Ethereum transaction address with a 0x prefix
 * `eventName` - The event to filter by
 * `out` - The event data, this needs to be a pointer to the expect return value / struct, the struct members need to be defined as PascalCase style, see examples below
 
-For the following event ABI
+The function will return:
+
+* `ethBlockNumber` - The block number of the log requested
+* `ethTxIndex` - The transaction index in the block
+
+An example of using the `GetTransactionLog()` for the following event ABI
 
 ```javascript
 {
