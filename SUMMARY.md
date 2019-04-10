@@ -13,7 +13,7 @@
 ## Orbs Contracts
 
 * [Smart contracts](orbs-contracts/smart-contracts.md)
-* [Layout of a contact file](orbs-contracts/layout-of-a-contact-file.md)
+* [Layout of a contract file](orbs-contracts/layout-of-a-contract-file.md)
 * [Data types](orbs-contracts/data-types.md)
 * [State](orbs-contracts/contract-state.md)
 * [Address](orbs-contracts/signer-and-addresses.md)

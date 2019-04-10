@@ -1,4 +1,4 @@
-# Layout of a contact file
+# Layout of a contract file
 
 Orbs contacts are written in Golang, you can see some high level explanation on [Becoming a Go developer](https://orbs.gitbook.io/contract-sdk/~/edit/drafts/-LVnlbSBlfPGStLbU5Xx/getting-started/untitled) in the Getting Started episode. In this page we will go over the layout of a single contract and explain the different elements of code that the contract is comprised of.
 
