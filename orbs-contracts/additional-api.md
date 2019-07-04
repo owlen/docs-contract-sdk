@@ -2,7 +2,7 @@
 
 This page is used to describe all the additional API which exists as part of the Contract SDK
 
-### Env
+## Env
 
 To use the `Env` package, you need to import it
 
@@ -14,7 +14,7 @@ import (
 
 It provides the following functions
 
-#### GetBlockHeight
+### GetBlockHeight
 
 Used to get the block height which will be the one this transaction be a part of
 
@@ -24,7 +24,7 @@ GetBlockHeight() uint64
 
 It will return the block height in decimal values
 
-#### GetBlockTimestamp
+### GetBlockTimestamp
 
 Used to get the block timestamp \(creation time\) which will be the one this transaction be a part of
 
@@ -34,7 +34,17 @@ GetBlockTimestamp() uint64
 
 It will return the block timestamp representing the Unix epoch in nanoseconds
 
-### Safemath
+### GetVirtualChainId
+
+Used to get the virtual chain id this contract is executing under
+
+```go
+GetVirtualChainId() uint32
+```
+
+It will return the virtual chain id in decimal values
+
+## Safemath
 
 To use the `Safemath` package, you need to import it
 
