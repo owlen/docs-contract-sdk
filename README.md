@@ -8,10 +8,6 @@ The three chapters in the documentation cover:
 * [Orbs Contracts](orbs-contracts/smart-contracts.md) - how to develop a new contract - a full reference of the Orbs Contract SDK
 * [Gamma in Depth](gamma-in-depth/starting-and-stopping-the-server.md) - working with gamma-cli, the Orbs local blockchain implementation
 
-{% hint style="warning" %}
-While the Orbs smart contract SDK is stable, it is still under active development; there may be breaking changes.
-{% endhint %}
-
 Support for additional programming languages like JavaScript is under way, [contact us](https://github.com/orbs-network/orbs-contract-sdk/blob/master/FeatureRequest@orbs.com) for more information.
 
 ## Github repo

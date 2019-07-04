@@ -22,6 +22,7 @@
 * [Calling other contracts](orbs-contracts/calling-external-resources.md)
 * [Calling Ethereum contract](orbs-contracts/calling-ethereum-contract.md)
 * [API Reference](orbs-contracts/additional-api.md)
+* [Limitations of Orbs Contracts](orbs-contracts/limitations-of-orbs-contracts.md)
 * [Creating a new contract](orbs-contracts/creating-a-new-contract.md)
 
 ## Gamma in Depth
