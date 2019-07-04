@@ -30,3 +30,5 @@ Go is a low-level open source language developed by Google for extreme performan
 
 Go is also a mature language, with millions upon millions of lines of code used in production for the last 10 years. Go comes with a powerful toolchain, multiple IDEs and a rich ecosystem of third party libraries.
 
+To ensure the secure and deterministic execution of Orbs smart contract, there are several limitations set on what features you can use of the Go language when building contracts. They are [described here](../orbs-contracts/limitations-of-orbs-contracts.md) but it is recommended to go over them only after you familiarize yourself with Go.
+
