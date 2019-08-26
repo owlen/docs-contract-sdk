@@ -31,6 +31,8 @@ Addresses are **case sensitive**, similarly to ethereum, the checksum is calcula
 
 Having the ability to validate the checksum helps us make sure that in cases where human errors \(typos\) are made when inputting an address, we can alert and possibly reject the transaction \(depending on the selected logic\)
 
+The transaction will be accepted when the addresses are uniform, meaning all-lower or all-upper case. Of course, the transaction is also accepted when the mixed-case checksum-ed address is valid.
+
 ### Signer and caller
 
 In Orbs there are two terms around well-known address during runtime, which are the Signer address and the Caller address.
