@@ -1,10 +1,14 @@
 ---
 description: >-
-  Once you have a working Go environment on your machine, the next step is
-  downloading the contract SDK to your local Go workspace.
+  You are encouraged to look at the Contract SDK itself, although that is not
+  required in order to build contracts on the Orbs Network.
 ---
 
 # Downloading the Contract SDK
+
+Every feature of the SDK is documented at the [Orbs Contract](../orbs-contracts/smart-contracts.md) chapter of the Contract SDK documentation. The Contract SDK is also published as a Go Module to ease usage when developing a contract. \([what are Go Modules](https://blog.golang.org/using-go-modules) - from the golang blog\)
+
+Having that said, the [examples in the Contract SDK](https://github.com/orbs-network/orbs-contract-sdk/tree/master/go/examples) project can be useful in order to assist with getting started on creating more complex contracts.
 
 ## Cloning the SDK
 

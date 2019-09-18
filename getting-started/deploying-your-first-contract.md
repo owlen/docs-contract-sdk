@@ -95,6 +95,8 @@ Write the transaction details in a JSON file named `add-25.json`
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+> More Information about sending transactions and the Gamma-cli json files structures can be found at the [gamma in depth chapter](../gamma-in-depth/sending-transactions-and-queries.md) of this documentation
+
 To increment the counter by 75, let's send this transaction 3 times from terminal
 
 ```text
