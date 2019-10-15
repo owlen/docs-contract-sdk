@@ -1,20 +1,20 @@
 # Error handling
 
-The execution flow of Orbs Contracts does not include error handling, meaning that once an error occurs, the code will simply stop execution, the state in the blockchain will not be stored and any changes done up until the error will be reverted.
+The execution flow of Orbs contracts does not include error handling, meaning that once an error occurs, code execution stops, the state in the blockchain is not stored, and any changes done up until the error are reverted.
 
-When the contract execution hits an error, the `ExecutionResult` will be `ERROR_SMART_CONTRACT` and the error message will be displayed in `OutputArguments`.
+When the contract execution hits an error, the `ExecutionResult` is set to `ERROR_SMART_CONTRACT`, and an error message is set in `OutputArguments`.
 
-Using `panic` is the simplest way to report an error from within a contract and in a similar way seen above, the error message will be returned as part of the output arguments of the execution.
+Using `panic` is the simplest way to report an error from within a contract, and in a similar way seen above, the error message is returned as part of the output arguments of the execution.
 
-So for example, the below code
+For example, the code:
 
 ```go
 func throw() {
-	panic("the error message from the code")
+    panic("the error message from the code")
 }
 ```
 
-Will output the following result on execution
+Will output the following result on execution:
 
 ```javascript
 {
