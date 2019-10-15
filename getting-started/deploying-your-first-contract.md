@@ -1,7 +1,7 @@
 ---
 description: >-
-  This tutorial will take you through the entire process of writing and
-  deploying a contract from start to finish in just a few minutes.
+  This tutorial will take you through the entire process of writing a contract and deploying
+  it on a local instance of ORBS in just a few minutes.
 ---
 
 # Deploying your first contract
@@ -51,6 +51,9 @@ We'll test our contract on Gamma server. Start it from terminal
 ```text
 gamma-cli start-local
 ```
+
+You can keep an eye on Prism (http://localhost:3000/) to see new blocks and transactions apear 
+as you continue with the deployment in the next steps.  
 
 ## 3. Deploy the contract
 
