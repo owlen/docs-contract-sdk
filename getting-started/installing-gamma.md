@@ -46,6 +46,10 @@ Start Gamma server by running in terminal
 gamma-cli start-local
 ```
 
+If everything went well, you now have a running ORBS blockchain on your local machine. Yes, it's that simple! You can browse to http://localhost:8080/ to view the status of your local ORBS instance.
+
+The `start-local` comands also runs our block explorer, Prism. You can use Prism to get more info about your blockchain instance by browsing to http://localhost:3000/. 
+
 When finished with the server, stop it by running in terminal
 
 ```text
