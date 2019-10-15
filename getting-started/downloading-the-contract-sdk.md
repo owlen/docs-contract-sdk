@@ -12,7 +12,7 @@ Having that said, the [examples in the Contract SDK](https://github.com/orbs-net
 
 ## Cloning the SDK
 
-Download the SDK to your computer by running the following in terminal
+Download the SDK to your computer by running the following in a terminal
 
 ```
 go get -u github.com/orbs-network/orbs-contract-sdk/...
