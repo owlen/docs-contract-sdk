@@ -58,7 +58,7 @@ The state is described in more detail at the [Contract state](https://orbs.gitbo
 
 In Golang, functions beginning with the lowercase letters are considered as 'private' or not exported, and those whose name starts with an uppercase are 'public' and exported.
 
-In Orbs, all functions should be written as 'private', meaning beginning with a lowercase letter, and functions that should be exported will be declared explicitly using the sdk.Export() function. In the example above, we can see that the functions `add` and `get` are declared as exported.
+In Orbs, all functions should be written as 'private', meaning beginning with a lowercase letter, and functions that should be exported will be declared explicitly using the `sdk.Export()` function. In the example above, we can see that the functions `add` and `get` are declared as exported.
 
 ### Transactions and Queries
 
