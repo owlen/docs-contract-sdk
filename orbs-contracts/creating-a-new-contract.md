@@ -55,7 +55,7 @@ The example below uses a standard ERC20 contract to run some tests, the folder s
  - /erc20.go
 ```
 
-In that folder structure, `erc20.go` is the contract implementation, `token_init_test.go` holds some testing code which we explore later, and `balanceOfuser1.json` holds the gamma-cli query payload, which is executed over the Orbs blockchain (gamma) and runs the test.
+In that folder structure, `erc20.go` is the contract implementation, `token_init_test.go` holds some testing code which we explore later, and `balanceOfuser1.json` holds the gamma-cli query payload, which is executed over the Orbs blockchain \(gamma\) and runs the test.
 
 Observing the testing code, `token_init_test.go` we can see the following:
 
