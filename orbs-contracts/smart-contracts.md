@@ -6,11 +6,11 @@ one or more smart contracts, and ultimately deploying them to run over a blockch
 
 ### Orbs smart contracts
 
-The Orbs smart contracts are the logic of your apps: the high level workflow is creating the contracts (code) using the Orbs Contract SDK, testing it and experimenting with the Gamma framework, and later deploying your contract to the Orbs blockchain.
+The Orbs smart contracts are the logic of your apps: the high level workflow is creating the contracts \(code\) using the Orbs Contract SDK, testing it and experimenting with the Gamma framework, and later deploying your contract to the Orbs blockchain.
 
 Currently, the contracts can be written in the Golang language. In the future the Orbs contract SDK will be available in other languages as well.
 
-Similar to other Smart Contract frameworks, an Orbs contract is comprised of the written code (functions) and data (state) that resides inside of the blockchain. 
+Similar to other Smart Contract frameworks, an Orbs contract is comprised of the written code \(functions\) and data \(state\) that resides inside of the blockchain. 
 
 Here is an example of a straightforward contract that implements a counter. It has two main functions, `get` and `add`, and it stores a single state value called `counter`.  
 
